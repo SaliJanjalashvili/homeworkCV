@@ -63,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: #8fd3f4;
+  color: #a78bfa;
   text-decoration: underline;
 }
 
@@ -125,8 +125,9 @@ a:hover {
   height: 30px;
 }
 
-.software .item {
+.skills .item {
   border-bottom: none;
+  cursor: pointer;
 }
 
 .progress-bar {
@@ -135,12 +136,26 @@ a:hover {
   background-color: #f4effd33;
   border-radius: 4px;
   overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 .progress-fill {
   height: 100%;
   background: linear-gradient(270deg, #8fd3f4 0%, #84fab0 100%);
   border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.skills .item:hover .progress-fill {
+  background: linear-gradient(270deg, #a78bfa 0%, #ec4899 100%);
+}
+
+.skills .item:hover .progress-bar {
+  background-color: #f3e8ff;
+}
+
+.skills .item:hover h3 {
+  color: #a78bfa;
 }
 
 .logo {
@@ -266,7 +281,7 @@ a:hover {
 .work-content:has(.work-three:hover) .work-three .circle,
 .education-content:has(.education-one:hover) .education-one .circle,
 .education-content:has(.education-two:hover) .education-two .circle {
-  background-color: #7fc5e9;
+  background-color: #a78bfa;
 }
 
 .work-content:has(.work-one:hover) .experience-item.work-one h3,
@@ -279,5 +294,5 @@ a:hover {
 .education-content:has(.education-one:hover) .education-one p,
 .education-content:has(.education-two:hover) .experience-item.education-two h3,
 .education-content:has(.education-two:hover) .education-two p {
-  color: #7fc5e9;
+  color: #a78bfa;
 }
