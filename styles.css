@@ -41,6 +41,7 @@ h3 {
   font-style: normal;
   line-height: 100%;
   letter-spacing: 0%;
+  transition: color 0.3s ease;
 }
 
 p {
@@ -52,6 +53,7 @@ p {
   line-height: 100%;
   letter-spacing: 0%;
   color: #292929;
+  transition: color 0.3s ease;
 }
 
 a {
@@ -210,6 +212,12 @@ a:hover {
   height: 11px;
   border-radius: 50%;
   background-color: #292929;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-container {
+  cursor: pointer;
 }
 
 .work-content .experience-right {
@@ -229,9 +237,11 @@ a:hover {
 }
 
 .experience-item {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  cursor: pointer;
 }
 
 .experience-item h3 {
@@ -249,4 +259,25 @@ a:hover {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.work-content:has(.work-one:hover) .work-one .circle,
+.work-content:has(.work-two:hover) .work-two .circle,
+.work-content:has(.work-three:hover) .work-three .circle,
+.education-content:has(.education-one:hover) .education-one .circle,
+.education-content:has(.education-two:hover) .education-two .circle {
+  background-color: #7fc5e9;
+}
+
+.work-content:has(.work-one:hover) .experience-item.work-one h3,
+.work-content:has(.work-one:hover) .work-one p,
+.work-content:has(.work-two:hover) .experience-item.work-two h3,
+.work-content:has(.work-two:hover) .work-two p,
+.work-content:has(.work-three:hover) .experience-item.work-three h3,
+.work-content:has(.work-three:hover) .work-three p,
+.education-content:has(.education-one:hover) .experience-item.education-one h3,
+.education-content:has(.education-one:hover) .education-one p,
+.education-content:has(.education-two:hover) .experience-item.education-two h3,
+.education-content:has(.education-two:hover) .education-two p {
+  color: #7fc5e9;
 }
