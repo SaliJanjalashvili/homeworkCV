@@ -54,6 +54,17 @@ p {
   color: #292929;
 }
 
+a {
+  color: #292929;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #8fd3f4;
+  text-decoration: underline;
+}
+
 .container {
   position: relative;
   width: 585px;
